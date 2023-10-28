@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://diyt88qx4m80s"]
+
+[ext_resource type="Script" path="res://mydebug/My Debug.gd" id="1_crg1f"]
+
+[node name="MyDebug" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_crg1f")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+columns = 2
